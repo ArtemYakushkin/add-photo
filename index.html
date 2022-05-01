@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    <!-- Шапка -->
     <header class="header">
       <div class="container">
         <div class="header__inner">
@@ -54,6 +55,7 @@
       </div>
     </header>
     <main>
+      <!-- Секция герой -->
       <section class="hero">
         <div class="hero__inner">
           <div class="container">
@@ -84,12 +86,112 @@
               фотостудией вы останетесь довольны и еще не раз захотите
               возвращаться к нам.
             </p>
-            <button class="hero__button">
-              <a href="#">Получить консультацию</a>
+            <button class="hero__button id="modal-open">
+              <a href="#" id="modal-open">Получить консультацию</a>
             </button>
           </div>
         </div>
       </section>
+
+      <!-- Модальное окно -->
+      <div class="modal" id="modal">
+        <div class="modal__window">
+          <div class="modal__block">
+            <button class="modal__btn-close">
+              <a class="close-modal" href="#">
+                <img
+                  class="modal__btn-icon"
+                  src="./img/close.svg"
+                  alt="close"
+                />
+              </a>
+            </button>
+            <div class="modal__inner">
+              <div class="modal__image">
+                <img
+                  class="modal__image-png"
+                  src="./img/modal-image.png"
+                  alt="form"
+                />
+              </div>
+              <div class="modal__connection">
+                <h5 class="modal__title">Форма обратной связи</h5>
+                <form class="modal__form">
+                  <ul class="modal__list">
+                    <li class="modal__item">
+                      <label class="modal__label">Имя</label>
+                      <input
+                        class="modal__input"
+                        type="text"
+                        placeholder="Введите ваше имя"
+                      />
+                    </li>
+                    <li class="modal__item">
+                      <label class="modal__label">E-mail</label>
+                      <input
+                        class="modal__input"
+                        type="email"
+                        placeholder="Введите ваш E-mail"
+                      />
+                    </li>
+                    <li class="modal__item">
+                      <label class="modal__label">Телефон</label>
+                      <input
+                        class="modal__input"
+                        type="tel"
+                        placeholder="Введите ваш телефон"
+                      />
+                    </li>
+                  </ul>
+                  <button class="modal__btn-form" type="submit">
+                    <a id="feedback-open" href="#">Отправить</a>
+                  </button>
+                </form>
+                <p class="modal__text">
+                  Нажимая кнопку «Отправить», вы даете согласие на обработку
+                  персональных данных и соглашаетесь с
+                  <a class="modal__policy" href="#"
+                    >политикой конфиденциальности</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Модальное окно 2 -->
+      <div class="feedback" id="feedback">
+        <div class="feedback__window">
+          <div class="feedback__block">
+            <!-- <div class="feedback__balls">
+              <img class="fedback__ball-1" src="./img/ball-1.png" alt="ball-1">
+              <img class="fedback__ball-2" src="./img/ball-2.png" alt="ball-2">
+              <img class="fedback__ball-3" src="./img/ball-3.png" alt="ball-3">
+              <img class="fedback__ball-4" src="./img/ball-4.png" alt="ball-4">
+            </div> -->
+            <button class="feedback__btn-close">
+              <a href="#">
+                <img
+                  class="feedback__btn"
+                  src="./img/close.svg"
+                  alt="close"
+                />
+              </a>
+            </button>
+            <h5 class="feedback__title">
+              Благодарим за оставленную заявку!
+            </h5>
+            <p class="feedback__text">
+              Наши специалисты уже обрабатывают Вашу заявку и свяжутся с Вами в
+              ближайшее время
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/feetback.js"></script>
   </body>
 </html>
