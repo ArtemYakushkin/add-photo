@@ -1,0 +1,129 @@
+.work {
+    padding: 120px 0 60px 0;
+    max-width: 1440px;
+    overflow: hidden;
+    margin-left: auto;
+    margin-right: auto;
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.19;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 138px;
+    }
+
+    &__slider {
+        position: relative;
+    }
+
+    &__button-prev,
+    &__button-next {
+        width: 73px;
+        height: 73px;
+        border-radius: 50%;
+        background-color: #ffffff;
+        transition: all 0.2s;
+        &:active {
+            background-color: var(--accent-color);
+        }
+    }
+}
+
+///////////////////////////////////////////
+
+.swiper-slide-active {
+    width: 555px;
+    height: auto;
+    z-index: 1;
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.3));
+}
+
+.swiper-slide-active .work__image {
+    transform: scale(1.2);
+    transition: transform .2s ease;  
+}
+
+.swiper-button-prev::after {
+    content: '';
+}
+
+.swiper-button-next::after {
+    content: '';
+}
+
+.swiper-button-prev {
+    left: 22%;
+    top: 40%;
+}
+
+.swiper-button-next {
+    right: 22%;
+    top: 40%;
+}
+
+.swiper-pagination-horizontal {
+    bottom: 40px;
+}
+
+.swiper-pagination-bullet {
+    background: var(--gray);
+    width: 6px;
+    height: 6px;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--accent-color);
+    transform: scale(1.5);
+}
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 90px;
+}
+
+//////////////////////////////////////
+
+.mfp-bg {
+    background: #ffffff;
+    opacity: 1;
+}
+
+.mfp-zoom-out-cur {
+    cursor: pointer;
+}
+
+.mfp-close {
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+}
+
+.mfp-arrow-left {
+    position: absolute;
+    width: 73px;
+    height: 73px;
+    border-radius: 50%;
+    background: #000000;
+    filter: drop-shadow(0px 2px 10px rgba(0, 0, 0, 0.15));
+    top: 50%;
+    left: 0;
+}
+
+.mfp-counter {
+    display: none;
+}
+
+.mfp-title {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333333;
+    margin-top: 16px;
+    text-align: center;
+}
+
+
+
+
+
+
+

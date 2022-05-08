@@ -21,9 +21,6 @@
 
 .feedback__block {
     width: 622px;
-    background-image: url(/img/ball-1.png), url(/img/ball-2.png);
-    background-repeat: no-repeat;
-    background-position: 0 57px, 0 20px;
     background-color: #ffffff;
     border-radius: 15px;
     padding: 88px 80px;
@@ -31,7 +28,16 @@
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
-    animation-duration: 0.4s
+    animation-duration: 0.4s;
+
+    // &::after {
+    //     content: '';
+    //     position: absolute;
+    //     width: 264px;
+    //     height: 264px;
+    //     border-radius: 50%;
+    //     background-color: #F9F4EE;
+    // }
 }
 
 @-webkit-keyframes animatetop {
@@ -59,20 +65,58 @@
 }
 
 .feedback__balls {
-    width: 622px;
-    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
 }
 
-.fedback__ball-1 {
+.feedback__ball-1 {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    width: 264px;
+    height: 264px;
+    border-radius: 50%;
+    background-color: rgba(249, 244, 238, 1);
+    mix-blend-mode: multiply;
+    left: -180px;
+    top: 107px;
 }
 
-.fedback__ball-2 {
+.feedback__ball-2 {
     position: absolute;
-    left: 0;
-    bottom: 0;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background-color: rgba(249, 244, 238, 1);
+    mix-blend-mode: multiply;
+    left: 10px;
+    bottom: -50px;
+}
+
+.feedback__ball-3 {
+    position: absolute;
+    width: 264px;
+    height: 264px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.03);
+    mix-blend-mode: multiply;
+    right: -74px;
+    top: -134px;
+}
+
+.feedback__ball-4 {
+    position: absolute;
+    width: 106px;
+    height: 106px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.04);
+    mix-blend-mode: multiply;
+    right: -39px;
+    top: 77px;
 }
 
 .feedback__btn-close {

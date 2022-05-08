@@ -18,9 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
+    
     <!-- Шапка -->
     <header class="header">
       <div class="container">
@@ -55,6 +58,7 @@
       </div>
     </header>
     <main>
+
       <!-- Секция герой -->
       <section class="hero">
         <div class="hero__inner">
@@ -164,12 +168,12 @@
       <div class="feedback" id="feedback">
         <div class="feedback__window">
           <div class="feedback__block">
-            <!-- <div class="feedback__balls">
-              <img class="fedback__ball-1" src="./img/ball-1.png" alt="ball-1">
-              <img class="fedback__ball-2" src="./img/ball-2.png" alt="ball-2">
-              <img class="fedback__ball-3" src="./img/ball-3.png" alt="ball-3">
-              <img class="fedback__ball-4" src="./img/ball-4.png" alt="ball-4">
-            </div> -->
+            <div class="feedback__balls">
+              <div class="feedback__ball-1"></div>
+              <div class="feedback__ball-2"></div>
+              <div class="feedback__ball-3"></div>
+              <div class="feedback__ball-4"></div>
+            </div>
             <button class="feedback__btn-close">
               <a href="#">
                 <img
@@ -189,9 +193,166 @@
           </div>
         </div>
       </div>
+
+      <!-- Наши работы -->
+      <section class="work">
+        <h2 class="work__title">Наши работы</h2>
+        <div class="work__slider swiper-container">
+          <div class="work__wrapper swiper-wrapper">
+            <div class="work__slide swiper-slide">
+              <div class="work__image">
+                <a href="./img/work-1-big.jpg" title="Студия"> 
+                  <img src="./img/work-1.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="work__slide swiper-slide">
+              <div class="work__image">
+                <a href="./img/work-2-big.jpg" title="Объектив">
+                  <img src="./img/work-2.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="work__slide swiper-slide">
+              <div class="work__image">
+                <a href="./img/work-3-big.jpg" title="Фотограф">
+                  <img src="./img/work-3.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="work__slide swiper-slide">
+              <div class="work__image">
+                <a href="./img/work-1-big.jpg" title="Студия">
+                  <img src="./img/work-1.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="work__slide swiper-slide">
+              <div class="work__image">
+                <a href="./img/work-2-big.jpg" title="Объектив">
+                  <img src="./img/work-2.jpg" alt="">
+                </a>
+              </div>
+            </div>
+            <div class="work__slide swiper-slide">
+              <div class="work__image">
+                <a href="./img/work-3-big.jpg" title="Фотограф">
+                  <img src="./img/work-3.jpg" alt="">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="work__button-prev swiper-button-prev">
+            <svg class="work__prev-icon" width="20" height="40">
+              <use href="./img/symbol-defs.svg#icon-arrow-left"></use>
+            </svg>
+          </div>
+          <div class="work__button-next swiper-button-next">
+            <svg class="work__next-icon" width="20" height="40">
+              <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
+            </svg>
+          </div>
+
+          <div class="work__pagination swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!-- Наши локации -->
+      <section class="location">
+        <!-- <img class="location__line" src="./img/line-location.png" alt=""> -->
+        <div class="container">
+          <h2 class="location__title">Наши локации</h2>
+          <div class="location__slider swiper-container">
+            <div class="location__wrapper swiper-wrapper">
+              <div class="location__slide swiper-slide">
+                <div class="location__image">
+                  <a href="./img/location-1-big.jpg" title="Наша локация №1">
+                    <div class="location__image-wrapper">
+                      <h6 class="location__image-title">Наша локация №1</h6>
+                    </div>
+                    <img src="./img/location-1.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="location__slide swiper-slide">
+                <div class="location__image">
+                  <a href="./img/location-2-big.jpg" title="Наша локация №2">
+                    <div class="location__image-wrapper">
+                      <h6 class="location__image-title">Наша локация №2</h6>
+                    </div>
+                    <img src="./img/location-2.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="location__slide swiper-slide">
+                <div class="location__image">
+                  <a href="./img/location-3-big.jpg" title="Наша локация №3">
+                    <div class="location__image-wrapper">
+                      <h6 class="location__image-title">Наша локация №3</h6>
+                    </div>
+                    <img src="./img/location-3.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="location__slide swiper-slide">
+                <div class="location__image">
+                  <a href="./img/location-1-big.jpg" title="Наша локация №1">
+                    <div class="location__image-wrapper">
+                      <h6 class="location__image-title">Наша локация №1</h6>
+                    </div>
+                    <img src="./img/location-1.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="location__slide swiper-slide">
+                <div class="location__image">
+                  <a href="./img/location-2-big.jpg" title="Наша локация №2">
+                    <div class="location__image-wrapper">
+                      <h6 class="location__image-title">Наша локация №2</h6>
+                    </div>
+                    <img src="./img/location-2.png" alt="">
+                  </a>
+                </div>
+              </div>
+              <div class="location__slide swiper-slide">
+                <div class="location__image">
+                  <a href="./img/location-3-big.jpg" title="Наша локация №3">
+                    <div class="location__image-wrapper">
+                      <h6 class="location__image-title">Наша локация №3</h6>
+                    </div>
+                    <img src="./img/location-3.png" alt="">
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="location__button-prev swiper-button-prev">
+              <svg class="location__prev-icon" width="20" height="40">
+                <use href="./img/symbol-defs.svg#icon-arrow-left"></use>
+              </svg>
+            </div>
+            <div class="location__button-next swiper-button-next">
+              <svg class="location__next-icon" width="20" height="40">
+                <use href="./img/symbol-defs.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
+          </div>
+          <button class="location__button id="">
+              <a href="" id="">выбрать локацию </a>
+          </button>
+        </div>    
+      </section>
     </main>
 
     <script src="./js/modal.js"></script>
     <script src="./js/feetback.js"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./js/slider-work.js"></script>
+    <script src="./js/slider-location.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="./js/popup-work.js"></script>
+    <script src="./js/popup-location.js"></script>
   </body>
 </html>
