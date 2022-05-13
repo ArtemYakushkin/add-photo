@@ -951,4 +951,65 @@ button {
   text-decoration-line: underline;
   color: #333333;
 }
+
+.decor {
+  padding: 60px 0 50px 0;
+}
+
+.decor .container {
+  width: 1260px;
+}
+
+.decor__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 1.19;
+  text-align: center;
+  color: #333333;
+  margin-bottom: 80px;
+}
+
+.decor__monitor {
+  max-width: 100%;
+  background: #999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.decor__video {
+  position: relative;
+}
+
+.decor__video.video-is-playing #video-play {
+  display: block;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.decor__play {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.2s ease;
+  transition-property: opacity, visibility;
+}
+
+.decor__play:hover {
+  transform: scale(0.8);
+}
+
+.decor__item {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  object-fit: cover;
+  aspect-ratio: 16 / 9;
+}
 /*# sourceMappingURL=main.css.map */
