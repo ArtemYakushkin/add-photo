@@ -1,0 +1,41 @@
+.motivation {
+    padding: 60px 0 50px 0;
+    background-color: var(--background-color-1);
+
+    &__title {
+        font-weight: 600;
+        font-size: 36px;
+        line-height: 1.19;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 32px;
+    }
+
+    &__text {
+        font-size: 16px;
+        line-height: 1.62;
+        color: #4A4A4A;
+    }
+
+    &__text + &__text {
+        margin-top: 25px;
+    }
+    &__btn {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #E97522;
+        margin-top: 10px;
+        margin-left: auto;
+        display: block;
+    }   
+}
+
+#more {
+    display: none;
+}
+
+
+
+
+

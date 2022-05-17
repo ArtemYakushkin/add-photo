@@ -29,7 +29,10 @@
         line-height: 1.67;
         color: var(--text-color-2);
 
-        &:hover,
+        &:hover {
+            color: #000000;
+        }
+
         &:active {
             color: var(--accent-color);
         }

@@ -1,9 +1,24 @@
 .hero {
     &__inner {
-        background-color: #444444;
+        background-color: rgba(#000000, 0.7);
         padding-top: 150px;
         padding-bottom: 140px;
         position: relative;
+
+    }
+
+    &__video {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        z-index: -1;
+    }
+
+    &__body {
+        // z-index: 2;
     }
 
     &__title {
@@ -14,6 +29,7 @@
         color: #F5F5F5;
         max-width: 790px;
         margin-bottom: 52px;
+        z-index: 2;
     }
 
     &__after-title {
@@ -58,10 +74,10 @@
         }
     }
 
-    &__popup {
-        position: absolute;
-        top: 370px;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
+    // &__popup {
+    //     position: absolute;
+    //     top: 370px;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    // }
 }
